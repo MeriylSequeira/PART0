@@ -9,13 +9,13 @@ sequenceDiagram
     browser->server: GET https://studies.cs.helsinki.fi/exampleapp/spa/main.js
     server-->browser: main.js
 
-Note over of browser: The browser starts executing the JavaScript code that requests data of JSON from the server
+Note browser: The browser starts executing the JavaScript code that requests data of JSON from the server
     
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/spa/new_note
     activate server
     server-->>browser: new note data
     deactivate server    
 
-    Note over of browser: The browser updates to display the new note
-    Note over of browser: The server processes the new note request and displays the updated data
+    Note over browser: The browser updates to display the new note
+    Note over browser: The server processes the new note request and displays the updated data
 ```
