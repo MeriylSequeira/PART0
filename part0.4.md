@@ -19,3 +19,5 @@ sequenceDiagram
     activate server
     server-->>browser: the JavaScript file
     deactivate server
+
+    Note right of browser: The browser starts executing the JavaScript code that requests data of JSON from the server
