@@ -8,3 +8,10 @@ Title: 0.5: Single Page App
     server-->browser: main.css
     browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa/main.js
     server-->browser: main.js
+
+    note over browser: browser starts executing js code.
+
+    browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa/data.json
+
+    note over browser: browser loads and shows the list of notes
+```
